@@ -1,0 +1,74 @@
+
+<!-- Copied from pacptechnologies.com/php/register.php -->
+
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=radio] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+<h3>Entry Form</h3>
+<div class="container">
+  <form  action="<?php echo($site_url); ?>/entry.php" method="POST">
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="name" placeholder="Full Name.." required>
+    
+    <label for="W/D/S/o"> W/D/S/o</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="fwname" name="wds" value="S" required>Son</n>
+	<input type="radio" id="fwname" name="wds" value="W" required>Wife</t>
+	<input type="radio" id="fwname" name="wds" value="D" required>Daughter</br>
+    
+    <label for="hname"> Father's / Husband's Name</label>
+    <input type="text" id="hname" name="fhname" placeholder="Father / Husband Name..." required>
+    
+    <label for="gen"> Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="gen" name="gender" value="M" required>Male
+	<input type="radio" id="gen" name="gender" value="F" required>Female</br>
+
+    <label for="lname">Age</label>
+    <input type="text" id="lname" name="age" placeholder="Age (YY).." required>
+	
+	<label for="subject">Address</label>
+    <input type="text" id="subject" name="address" placeholder="Location (eg. Baltana, Behlana, Hallomajra, Dhakoli etc.)..." required>
+	
+	<label for="lname">Mobile No.</label>
+    <input type="text" id="lname" name="mob" placeholder="Mobile No. (eg. 9999988888)" required>
+
+    <input type="submit" value="Submit" name="submit">
+  </form>
+</div>
+

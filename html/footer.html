@@ -1,0 +1,13 @@
+  <?php 
+      session_start();
+      $logged_user = $_SESSION['login_user'];
+      if ($logged_user == TRUE){
+          echo("You are logged in as <b>". $logged_user . "</b> . ");
+          echo("<a href=" . $site_url . "/logout.php>Click here to logout.</a>");
+      }
+  
+  ?>
+
+  
+  </body>
+</html>
